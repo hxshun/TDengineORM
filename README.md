@@ -14,12 +14,12 @@
 
 ##### 二、使用及配置
 
-在spring boot项目中引入依赖
+在spring boot项目中引入依赖 注：此项目为上传至maven库。如果使用请上传至私有库或者jar引入方式
 ```xml
 <dependency>
-  <groupId>com.cloudinnov</groupId>
-  <artifactId>cloud-common-tdengine</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <groupId>xxxx</groupId>
+  <artifactId>tdengine-orm</artifactId>
+  <version>xxx</version>
 </dependency>
 ```
 
@@ -33,13 +33,13 @@ tdengine:
   #rs模式驱动
   driverClassName: com.taosdata.jdbc.rs.RestfulDriver
   #restFull单点连接配置
-  url: jdbc:TAOS-RS://106.13.222.27:6041/test?charset=UTF-8&locale=en_US.UTF-8&timezone=UTC-8
+  url: jdbc:TAOS-RS://127.0.0.1:6041/test?charset=UTF-8&locale=en_US.UTF-8&timezone=UTC-8
   #数据库配置 Restful连接模式下需要配置 否则会出现 错误 切支持实体查询自动补全数据前缀 注解方式需在sql里自行添加 （普通和集群模式下无需设置此项系统会自动读取url的数据库）
   database: test
   #用户名
-  username: receive
+  username: test
   #密码
-  password: plmokn@**2025
+  password: test
   #最小空闲时间
   minimumIdle: 1000
   #最大池大小
@@ -51,7 +51,7 @@ tdengine:
   #空闲超时
   idleTimeout: 0
   #注解方式必须设置此项否则无法扫描到mapper接口
-  mapperPackage: com.cloudinnov.cloudhzhhservice.taostest
+  mapperPackage: xx.xxx.xxx.taostest
   #是否打印sql日志
   printSql: true
 ```
