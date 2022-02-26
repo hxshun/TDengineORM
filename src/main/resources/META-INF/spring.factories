@@ -1,0 +1,9 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  io.shun.tdengine.configuration.TDengineAutoConfiguration,\
+  io.shun.tdengine.processor.TDengineBeanDefinitionRegister,\
+  io.shun.tdengine.aspect.TDengineAspect,\
+  io.shun.tdengine.utils.TDengineSpringContextUtil
+
+
+#org.springframework.context.ApplicationListener=\
+#  com.cloudinnov.tdengine.processor.TDengineBeanDefinitionRegister
